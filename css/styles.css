@@ -128,9 +128,6 @@ img {
   display: inline-block;
   margin-right: 10px;
 
-  width: 16px;
-  height: 16px;
-
   font-size: inherit;
   fill: var(--primary-text-color);
 }
@@ -360,8 +357,6 @@ img {
 
 .icons-social-network {
   display: inline-flex;
-  width: 20px;
-  height: 20px;
   fill: #afb1b8;
 }
 
@@ -584,8 +579,6 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 .social-icon {
-  width: 20px;
-  height: 20px;
   fill: #ffffff;
 }
 
