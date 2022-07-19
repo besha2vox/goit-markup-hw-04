@@ -128,7 +128,6 @@ img {
   display: inline-block;
   margin-right: 10px;
 
-  font-size: inherit;
   fill: var(--primary-text-color);
 }
 
