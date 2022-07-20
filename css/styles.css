@@ -10,10 +10,9 @@
   --secondary-bgc: #2f303a;
   --tertiary-bgc: #f5f4fa;
   --card-set-gap: 30px;
+  --header-border: 1px solid #ececec;
+  --portfolio-border: 1px solid #eeeeee;
 }
-
-/* --header-border: 1px solid #ececec;
-  --portfolio-border: 1px solid #eeeeee; */
 
 body {
   font-family: Roboto, sans-serif;
@@ -58,7 +57,7 @@ img {
 /* ---------------ШАПКА-------------  */
 
 .page-header {
-  border: 1px solid #ececec;
+  border: 1px solid var(--header-border);
 
   font-weight: 500;
   font-size: 14px;
@@ -130,17 +129,12 @@ img {
   display: inline-block;
   margin-right: 10px;
 
-  fill: var(--primary-icon-color);
+  fill: currentColor;
 }
 
 .link:hover,
 .link:focus {
   color: var(--accent-color);
-}
-
-.link:hover .contacts-icon,
-.link:focus .contacts-icon {
-  fill: currentColor;
 }
 
 /* ---------------ГЕРОЙ-------------  */
@@ -376,13 +370,13 @@ img {
   width: 170px;
   height: 92px;
 
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
 }
 
 .clients-logo {
   display: inline-flex;
-  fill: #afb1b8;
+  fill: var(--primary-icon-color);
 }
 
 .clients-link:hover,
@@ -460,7 +454,7 @@ img {
 
 .card-content {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--portfolio-border);
   border-top: none;
 }
 
