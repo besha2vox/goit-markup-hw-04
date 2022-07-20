@@ -93,8 +93,8 @@ img {
   color: var(--accent-color);
 }
 
-.nav-list-item:not(:last-child) {
-  margin-right: 50px;
+.nav-list {
+  gap: 50px;
 }
 
 .nav-list-link {
@@ -111,10 +111,7 @@ img {
 
 .contacts-list {
   margin-left: auto;
-}
-
-.contacts-list-item:not(:last-child) {
-  margin-right: 50px;
+  gap: 50px;
 }
 
 .contacts-list-link {
@@ -229,14 +226,11 @@ img {
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.7;
+  gap: var(--card-set-gap);
 }
 
 .feature-list-item {
   max-width: 270px;
-}
-
-.feature-list-item:not(:nth-child(1n + 4)) {
-  margin-right: var(--card-set-gap);
 }
 
 .feature-list-title {
@@ -265,11 +259,9 @@ img {
 
 .activity-list {
   display: flex;
+  gap: var(--card-set-gap);
 }
 
-.activity-list-item:not(:nth-child(1n + 3)) {
-  margin-right: var(--card-set-gap);
-}
 /* ----------TEAM ---------  */
 
 .team {
@@ -278,6 +270,7 @@ img {
 
 .team-list {
   display: flex;
+  gap: var(--card-set-gap);
 }
 
 .team-list-item {
@@ -287,10 +280,6 @@ img {
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.team-list-item:not(:nth-child(1n + 4)) {
-  margin-right: var(--card-set-gap);
 }
 
 .card-container {
@@ -318,10 +307,7 @@ img {
 .social-network-list {
   display: flex;
   justify-content: center;
-}
-
-.social-network-item:not(:last-child) {
-  margin-right: 10px;
+  gap: 10px;
 }
 
 .social-network-link {
@@ -356,7 +342,7 @@ img {
 
 .clients-list {
   display: flex;
-  justify-content: space-between;
+  gap: var(--card-set-gap);
 }
 
 .clients-link {
@@ -390,10 +376,7 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-}
-
-.btn-list-item:not(:last-child) {
-  margin-right: 8px;
+  gap: 8px;
 }
 
 .btn {
@@ -498,8 +481,10 @@ img {
   font-style: normal;
 }
 
-.contact-list-item:not(:last-child) {
-  margin-bottom: 9px;
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 9px;
 }
 
 .physical-adress {
@@ -535,10 +520,7 @@ img {
 
 .social-list {
   display: flex;
-}
-
-.social-item:not(:last-child) {
-  margin-right: 10px;
+  gap: 10px;
 }
 
 .social-link {
