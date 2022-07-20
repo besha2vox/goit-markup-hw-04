@@ -3,6 +3,8 @@
   --secondary-text-color: rgba(255, 255, 255, 0.6);
   --rare-text-color: #ffffff;
   --title-text-color: #212121;
+  --primary-icon-color: #afb1b8;
+  --hover-icon-color: #ffffff;
   --accent-color: #2196f3;
   --primary-bgc: #ffffff;
   --secondary-bgc: #2f303a;
@@ -128,7 +130,7 @@ img {
   display: inline-block;
   margin-right: 10px;
 
-  fill: var(--primary-text-color);
+  fill: var(--primary-icon-color);
 }
 
 .link:hover,
@@ -138,7 +140,7 @@ img {
 
 .link:hover .contacts-icon,
 .link:focus .contacts-icon {
-  fill: var(--accent-color);
+  fill: currentColor;
 }
 
 /* ---------------ГЕРОЙ-------------  */
@@ -200,32 +202,16 @@ img {
 .features {
 }
 
-.feature-list-item::before {
-  display: inline-block;
-  margin-bottom: 30px;
-
-  content: "";
+.thumb-svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--card-set-gap);
   width: 270px;
   height: 120px;
-  background: #f5f4fa;
+
+  background: var(--tertiary-bgc);
   border-radius: 4px;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 70px 70px;
-}
-
-.icon-satellite::before {
-  background-image: url(../img/svg/features-1.svg);
-}
-.icon-clock::before {
-  background-image: url(../img/svg/features-2-clock.svg);
-}
-.icon-diagram::before {
-  background-image: url(../img/svg/features-3-diagram.svg);
-}
-.icon-astronaut::before {
-  background-image: url(../img/svg/features-4-astronaut.svg);
 }
 
 .visually-hidden {
@@ -356,7 +342,7 @@ img {
 
 .icons-social-network {
   display: inline-flex;
-  fill: #afb1b8;
+  fill: var(--primary-icon-color);
 }
 
 .social-network-link:hover,
@@ -366,7 +352,7 @@ img {
 
 .social-network-link:hover .icons-social-network,
 .social-network-link:focus .icons-social-network {
-  fill: #ffffff;
+  fill: var(--hover-icon-color);
 }
 
 /* Постоянные клиенты */
@@ -577,8 +563,9 @@ img {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
+
 .social-icon {
-  fill: #ffffff;
+  fill: var(--hover-icon-color);
 }
 
 .social-link:hover,
