@@ -38,7 +38,7 @@ img {
 	height: auto;
 }
 
-a,
+a:focus,
 button {
 	outline: none;
 }
