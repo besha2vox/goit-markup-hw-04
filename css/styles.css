@@ -280,8 +280,7 @@ button {
 }
 
 .card-container {
-	padding-top: var(--card-set-gap);
-	padding-bottom: var(--card-set-gap);
+	padding: var(--card-set-gap) 10px;
 }
 
 .team-list-title {
