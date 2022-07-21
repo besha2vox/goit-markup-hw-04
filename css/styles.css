@@ -62,7 +62,7 @@ button {
 /* ---------------ШАПКА-------------  */
 
 .page-header {
-	border: 1px solid var(--header-border);
+	border-bottom: var(--header-border);
 
 	font-weight: 500;
 	font-size: 14px;
@@ -157,6 +157,7 @@ button {
 
 .hero-title {
 	margin-bottom: var(--card-set-gap);
+	max-width: 696px;
 
 	font-weight: 900;
 	font-size: 44px;
