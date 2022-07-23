@@ -415,14 +415,6 @@ button {
 	margin-right: var(--card-set-gap);
 	margin-bottom: var(--card-set-gap);
 }
-/* 
-.portfolio-list-item:not(:nth-child(3n + 3)) {
-  margin-right: var(--card-set-gap);
-}
-
-.portfolio-list-item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: var(--card-set-gap);
-} */
 
 .portfolio-cards {
 	text-decoration: none;
@@ -450,7 +442,8 @@ button {
 	line-height: 1.9;
 }
 
-.portfolio-list-item:hover {
+.portfolio-cards-link:hover {
+	display: block;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /* ---------------ФУТЕР-------------  */
@@ -463,11 +456,12 @@ button {
 
 .footer .container {
 	display: flex;
+	align-items: baseline;
 }
 
-/* footer-first-el */
+/* footer-first-container */
 
-.footer-first-el {
+.footer-first-container {
 	margin-right: 70px;
 }
 
@@ -496,11 +490,7 @@ button {
 	color: var(--rare-text-color);
 }
 
-/* footer-second-el */
-
-.footer-second-el {
-	padding-top: 15px;
-}
+/* footer-second-container */
 
 .contact-list-link {
 	color: var(--secondary-text-color);
